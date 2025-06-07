@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   useLocation,
@@ -68,7 +68,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Wrapper>
           <Routes>
             <Route path="/" element={<HomeOne />} />
@@ -100,7 +100,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Wrapper>
-      </BrowserRouter>
+      </HashRouter>
 
       <ScrollToTop />
     </>
