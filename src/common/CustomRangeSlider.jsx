@@ -1,12 +1,8 @@
-
-
-
 import React, { useCallback, useEffect, useState, useRef } from "react";
 import classnames from "classnames";
 import PropTypes from "prop-types";
 
 const CustomRangeSlider = ({ min, max, onChange }) => {
-
   const [minVal, setMinVal] = useState(min);
   const [maxVal, setMaxVal] = useState(max);
   const minValRef = useRef(null);
@@ -63,7 +59,7 @@ const CustomRangeSlider = ({ min, max, onChange }) => {
           event.target.value = value.toString();
         }}
         className={classnames("thumb thumb--zindex-3", {
-          "thumb--zindex-5": minVal > max - 100
+          "thumb--zindex-5": minVal > max - 100,
         })}
       />
       <input
@@ -82,10 +78,10 @@ const CustomRangeSlider = ({ min, max, onChange }) => {
 
       <div className="slider">
         <div className="slider__track" />
-          <div ref={range} className="slider__range" />
-            <div className="slider__left-value">{minVal}</div>
-            <div className="slider__right-value">{maxVal}</div>
-        </div>
+        <div ref={range} className="slider__range" />
+        <div className="slider__left-value">{minVal}</div>
+        <div className="slider__right-value">{maxVal}</div>
+      </div>
     </div>
   );
 };
@@ -93,7 +89,7 @@ const CustomRangeSlider = ({ min, max, onChange }) => {
 CustomRangeSlider.propTypes = {
   min: PropTypes.number.isRequired,
   max: PropTypes.number.isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
 };
 
 export default CustomRangeSlider;

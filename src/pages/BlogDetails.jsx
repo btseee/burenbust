@@ -1,53 +1,48 @@
-import React from 'react';
-import Header from '../common/Header';
-import Footer from '../common/Footer';
-import Breadcrumb from '../common/Breadcrumb';
-import Cta from '../components/Cta';
-import { useLocation } from 'react-router-dom';
-import BlogDetailsSection from '../components/BlogDetailsSection';
+import React from "react";
+import Header from "../common/Header";
+import Footer from "../common/Footer";
+import Breadcrumb from "../common/Breadcrumb";
+import Cta from "../components/Cta";
+import { useLocation } from "react-router-dom";
+import BlogDetailsSection from "../components/BlogDetailsSection";
 // import { BlogDataContext } from '../contextApi/BlogDataContext';
-import PageTitle from '../common/PageTitle';
+import PageTitle from "../common/PageTitle";
 
 const BlogDetails = () => {
+  const location = useLocation();
 
-    const location = useLocation(); 
-    
-    return (
-        <>
-            <PageTitle title="CityScape - Blog Details" />
+  return (
+    <>
+      <PageTitle title="CityScape - Blog Details" />
 
-            {/* Header */}
-            <Header 
-                headerClass="dark-header has-border" 
-                logoBlack={false}
-                logoWhite={true}
-                headerMenusClass="mx-auto"
-                btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
-                spanClass="icon-right text-gradient" 
-                showHeaderBtn={true}
-                showOffCanvasBtn={false}
-                offCanvasBtnClass=""
-                showContactNumber={false}
-            />
+      {/* Header */}
+      <Header
+        headerClass="dark-header has-border"
+        logoBlack={false}
+        logoWhite={true}
+        headerMenusClass="mx-auto"
+        btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
+        btnLink="/add-new-listing"
+        btnText="Add Listing"
+        spanClass="icon-right text-gradient"
+        showHeaderBtn={true}
+        showOffCanvasBtn={false}
+        offCanvasBtnClass=""
+        showContactNumber={false}
+      />
 
-            {/* BreadCrumb */}
-            <Breadcrumb 
-                pageTitle="Blog Details"
-                pageName={location.state.title}
-            />
+      {/* BreadCrumb */}
+      <Breadcrumb pageTitle="Blog Details" pageName={location.state.title} />
 
-            <BlogDetailsSection/>
+      <BlogDetailsSection />
 
-            {/* Cta */}
-            <Cta ctaClass=""/>
+      {/* Cta */}
+      <Cta ctaClass="" />
 
-            {/* Footer */}
-            <Footer/>
-        </>
-    );
+      {/* Footer */}
+      <Footer />
+    </>
+  );
 };
 
 export default BlogDetails;
-

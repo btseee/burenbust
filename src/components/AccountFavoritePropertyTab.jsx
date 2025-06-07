@@ -1,12 +1,12 @@
-import React from 'react';
-import AccountMyPropertyTab from './AccountMyPropertyTab';
+import React from "react";
+import AccountMyPropertyTab from "./AccountMyPropertyTab";
 
 const AccountFavoritePropertyTab = () => {
-    return (
-        <>
-            <AccountMyPropertyTab/>
-        </>
-    );
+  return (
+    <>
+      <AccountMyPropertyTab />
+    </>
+  );
 };
 
 export default AccountFavoritePropertyTab;

@@ -1,48 +1,45 @@
-import React from 'react';
+import React from "react";
 
-import Header from './../common/Header';
-import Banner from '../components/Banner';
-import Footer from '../common/Footer';
-import MobileMenu from '../common/MobileMenu';
-import OffCanvas from '../common/OffCanvas';
-import PageTitle from '../common/PageTitle';
+import Header from "./../common/Header";
+import Banner from "../components/Banner";
+import Footer from "../common/Footer";
+import MobileMenu from "../common/MobileMenu";
+import OffCanvas from "../common/OffCanvas";
+import PageTitle from "../common/PageTitle";
 
 const HomeSix = () => {
-    return (
-        <>
-        <PageTitle title="CityScape - Home Six" />
+  return (
+    <>
+      <PageTitle title="CityScape - Home Six" />
 
-            <OffCanvas/>
-            <MobileMenu/>
-            
-            <main className="body-bg">
+      <OffCanvas />
+      <MobileMenu />
 
-                {/* Header */}
-                <Header 
-                    headerClass="" 
-                    logoBlack={true}
-                    logoWhite={false}
-                    headerMenusClass=""
-                    btnClass="btn btn-outline-light d-lg-block d-none"
-                    btnLink="/property"
-                    btnText="Sell Property"
-                    spanClass="icon-right text-gradient" 
-                    showHeaderBtn={true}
-                    showOffCanvasBtn={true}
-                    offCanvasBtnClass=""
-                    showContactNumber={false}
-                />
+      <main className="body-bg">
+        {/* Header */}
+        <Header
+          headerClass=""
+          logoBlack={true}
+          logoWhite={false}
+          headerMenusClass=""
+          btnClass="btn btn-outline-light d-lg-block d-none"
+          btnLink="/property"
+          btnText="Sell Property"
+          spanClass="icon-right text-gradient"
+          showHeaderBtn={true}
+          showOffCanvasBtn={true}
+          offCanvasBtnClass=""
+          showContactNumber={false}
+        />
 
-                {/* Banner */}
-                <Banner/>
+        {/* Banner */}
+        <Banner />
 
-              
-                {/* Footer */}
-                <Footer/>
-                
-            </main>   
-        </>
-    );
+        {/* Footer */}
+        <Footer />
+      </main>
+    </>
+  );
 };
 
 export default HomeSix;

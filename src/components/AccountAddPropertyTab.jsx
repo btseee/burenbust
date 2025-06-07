@@ -1,12 +1,12 @@
-import React from 'react';
-import AddListingForm from './AddListingForm';
+import React from "react";
+import AddListingForm from "./AddListingForm";
 
 const AccountAddPropertyTab = () => {
-    return (
-        <>
-            <AddListingForm/>
-        </>
-    );
+  return (
+    <>
+      <AddListingForm />
+    </>
+  );
 };
 
 export default AccountAddPropertyTab;

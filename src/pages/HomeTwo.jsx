@@ -1,79 +1,77 @@
-import React from 'react';
+import React from "react";
 
-import Header from './../common/Header';
-import MobileMenu from '../common/MobileMenu';
-import OffCanvas from '../common/OffCanvas';
-import BannerTwo from '../components/BannerTwo';
-import Service from '../components/Service';
-import AboutTwo from '../components/AboutTwo';
-import FloorPlan from './../components/FloorPlan';
-import CounterTwo from '../components/CounterTwo';
-import Gallery from '../components/Gallery';
-import Apartment from './../components/Apartment';
-import MessageTwo from '../components/MessageTwo';
-import BlogTwo from './../components/BlogTwo';
-import Footer from '../common/Footer';
-import PageTitle from '../common/PageTitle';
+import Header from "./../common/Header";
+import MobileMenu from "../common/MobileMenu";
+import OffCanvas from "../common/OffCanvas";
+import BannerTwo from "../components/BannerTwo";
+import Service from "../components/Service";
+import AboutTwo from "../components/AboutTwo";
+import FloorPlan from "./../components/FloorPlan";
+import CounterTwo from "../components/CounterTwo";
+import Gallery from "../components/Gallery";
+import Apartment from "./../components/Apartment";
+import MessageTwo from "../components/MessageTwo";
+import BlogTwo from "./../components/BlogTwo";
+import Footer from "../common/Footer";
+import PageTitle from "../common/PageTitle";
 
 const HomeTwo = () => {
-    return (
-        <>
-            <PageTitle title="CityScape - Home Two" />
-            
-            <OffCanvas/>
-            <MobileMenu/>
-            
-            <main className="dark-background">
+  return (
+    <>
+      <PageTitle title="CityScape - Home Two" />
 
-                {/* Header */}
-                <Header 
-                    headerClass="dark-header" 
-                    logoBlack={false}
-                    logoWhite={true}
-                    headerMenusClass="ms-auto me-4"
-                    btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                    btnLink="/add-new-listing"
-                    btnText="Add Listing"
-                    spanClass="icon-right text-gradient" 
-                    showHeaderBtn={true}
-                    showOffCanvasBtn={false}
-                    offCanvasBtnClass=""
-                    showContactNumber={false}
-                />
+      <OffCanvas />
+      <MobileMenu />
 
-                {/* Banner Two */}
-                <BannerTwo/>
+      <main className="dark-background">
+        {/* Header */}
+        <Header
+          headerClass="dark-header"
+          logoBlack={false}
+          logoWhite={true}
+          headerMenusClass="ms-auto me-4"
+          btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
+          btnLink="/add-new-listing"
+          btnText="Add Listing"
+          spanClass="icon-right text-gradient"
+          showHeaderBtn={true}
+          showOffCanvasBtn={false}
+          offCanvasBtnClass=""
+          showContactNumber={false}
+        />
 
-                {/* Service */}
-                <Service/>
+        {/* Banner Two */}
+        <BannerTwo />
 
-                {/* About Two */}
-                <AboutTwo/>
+        {/* Service */}
+        <Service />
 
-                {/* Floor Plan */}
-                <FloorPlan/>
+        {/* About Two */}
+        <AboutTwo />
 
-                {/* Gallery */}
-                <Gallery/>
+        {/* Floor Plan */}
+        <FloorPlan />
 
-                {/* Counter Two */}
-                <CounterTwo/>
+        {/* Gallery */}
+        <Gallery />
 
-                {/* Apartment */}
-                <Apartment/>
+        {/* Counter Two */}
+        <CounterTwo />
 
-                {/* Message Two */}
-                <MessageTwo/>
+        {/* Apartment */}
+        <Apartment />
 
-                {/* Blog Two */}
-                <BlogTwo/>
+        {/* Message Two */}
+        <MessageTwo />
 
-                {/* Footer */}
-                <Footer/>
-                
-            </main>   
-        </>
-    );
+        {/* Blog Two */}
+        <BlogTwo />
+
+        {/* Footer */}
+        <Footer />
+      </main>
+    </>
+  );
 };
 
 export default HomeTwo;

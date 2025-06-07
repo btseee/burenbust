@@ -1,83 +1,80 @@
-import React from 'react';
+import React from "react";
 
-import Header from './../common/Header';
-import Footer from '../common/Footer';
-import MobileMenu from '../common/MobileMenu';
-import OffCanvas from '../common/OffCanvas';
-import BannerThree from '../components/BannerThree';
-import AboutThree from './../components/AboutThree';
-import PropertyTypeThree from './../components/PropertyTypeThree';
-import PropertyTwo from './../components/PropertyTwo';
-import MessageThree from '../components/MessageThree';
-import Newsletter from '../components/Newsletter';
-import TestimonialThree from '../components/TestimonialThree';
-import CounterThree from '../components/CounterThree';
-import Faq from '../components/Faq';
-import BlogThree from './../components/BlogThree';
-import PageTitle from '../common/PageTitle';
+import Header from "./../common/Header";
+import Footer from "../common/Footer";
+import MobileMenu from "../common/MobileMenu";
+import OffCanvas from "../common/OffCanvas";
+import BannerThree from "../components/BannerThree";
+import AboutThree from "./../components/AboutThree";
+import PropertyTypeThree from "./../components/PropertyTypeThree";
+import PropertyTwo from "./../components/PropertyTwo";
+import MessageThree from "../components/MessageThree";
+import Newsletter from "../components/Newsletter";
+import TestimonialThree from "../components/TestimonialThree";
+import CounterThree from "../components/CounterThree";
+import Faq from "../components/Faq";
+import BlogThree from "./../components/BlogThree";
+import PageTitle from "../common/PageTitle";
 
 const HomeThree = () => {
-    return (
-        <>
-        
-        <PageTitle title="CityScape - Home Three" />
-            <OffCanvas/>
-            <MobileMenu/>
-            
-            <main className="body-bg">
+  return (
+    <>
+      <PageTitle title="CityScape - Home Three" />
+      <OffCanvas />
+      <MobileMenu />
 
-                {/* Header */}
-                <Header 
-                    headerClass="bg-transparent" 
-                    logoBlack={true}
-                    logoWhite={false}
-                    headerMenusClass="ms-auto menu-right"
-                    btnClass="btn btn-main  d-lg-block d-none"
-                    btnLink="/add-new-listing"
-                    btnText="Add Listing"
-                    spanClass="icon-right" 
-                    showHeaderBtn={true}
-                    showOffCanvasBtn={false}
-                    offCanvasBtnClass=""
-                    showContactNumber={false}
-                />
+      <main className="body-bg">
+        {/* Header */}
+        <Header
+          headerClass="bg-transparent"
+          logoBlack={true}
+          logoWhite={false}
+          headerMenusClass="ms-auto menu-right"
+          btnClass="btn btn-main  d-lg-block d-none"
+          btnLink="/add-new-listing"
+          btnText="Add Listing"
+          spanClass="icon-right"
+          showHeaderBtn={true}
+          showOffCanvasBtn={false}
+          offCanvasBtnClass=""
+          showContactNumber={false}
+        />
 
-                {/* Banner Three */}
-                <BannerThree/>
+        {/* Banner Three */}
+        <BannerThree />
 
-                {/* About Three */}
-                <AboutThree/>
+        {/* About Three */}
+        <AboutThree />
 
-                {/* Property Type Three */}
-                <PropertyTypeThree/>
+        {/* Property Type Three */}
+        <PropertyTypeThree />
 
-                {/* Property Two */}
-                <PropertyTwo/>
+        {/* Property Two */}
+        <PropertyTwo />
 
-                {/* Message Three */}
-                <MessageThree/>
+        {/* Message Three */}
+        <MessageThree />
 
-                {/* Newsletter */}
-                <Newsletter/>
+        {/* Newsletter */}
+        <Newsletter />
 
-                {/* Testimonial Three */}
-                <TestimonialThree/>
+        {/* Testimonial Three */}
+        <TestimonialThree />
 
-                {/* Counter Three */}
-                <CounterThree/>
+        {/* Counter Three */}
+        <CounterThree />
 
-                {/* Faq */}
-                <Faq/>
+        {/* Faq */}
+        <Faq />
 
-                {/* Blog Three */}
-                <BlogThree/>
+        {/* Blog Three */}
+        <BlogThree />
 
-                {/* Footer */}
-                <Footer/>
-                
-            </main>   
-        </>
-    );
+        {/* Footer */}
+        <Footer />
+      </main>
+    </>
+  );
 };
 
 export default HomeThree;
