@@ -5,7 +5,7 @@
     position: relative;
     z-index: 1;
     @include lg-screen {
-        padding: 20px;
+      padding: 20px;
     }
     &::before,
     &::after {
@@ -25,21 +25,21 @@
       border-radius: 99px 5px 5px 99px;
     }
     &-inner {
-        position: relative;
-        z-index: 1;
-        &::before {
-            position: absolute;
-            content: "";
-            width: calc(100% - 70px);
-            height: 100%;
-            top: -20px;
-            left: 1px;
-            border: 3px solid var(--gray-800);
-            border-radius: 6px 0 0 0;
-            border-right: 0;
-            border-bottom: 0;
-            z-index: -1;
-        }
+      position: relative;
+      z-index: 1;
+      &::before {
+        position: absolute;
+        content: "";
+        width: calc(100% - 70px);
+        height: 100%;
+        top: -20px;
+        left: 1px;
+        border: 3px solid var(--gray-800);
+        border-radius: 6px 0 0 0;
+        border-right: 0;
+        border-bottom: 0;
+        z-index: -1;
+      }
     }
     .img {
       border-radius: 200px 5px 5px 5px;
@@ -50,9 +50,9 @@
   }
 }
 .pipe-shape {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 /* ===================== Choose Us Css End =========================== */

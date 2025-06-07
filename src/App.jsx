@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
   useLocation,
   useNavigationType,
 } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import "react-18-image-lightbox/style.css";
+import "react-image-lightbox/style.css";
 import "./App.css";
 
 import HomeOne from "./pages/HomeOne";
@@ -68,7 +68,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Wrapper>
           <Routes>
             <Route path="/" element={<HomeOne />} />
@@ -100,7 +100,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Wrapper>
-      </HashRouter>
+      </BrowserRouter>
 
       <ScrollToTop />
     </>

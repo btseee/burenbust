@@ -16,14 +16,14 @@ import { ToastContainer, toast } from "react-toastify";
 const AccountSection = () => {
   const navigate = useNavigate();
 
-  const notify = () => toast.success("You have been logged out", {
-    theme: "colored", 
-  });
+  const notify = () =>
+    toast.success("You have been logged out", {
+      theme: "colored",
+    });
 
   const handleRedirectLogin = () => {
     navigate("/login");
   };
-    
 
   // Login Data
   const location = useLocation();
@@ -39,18 +39,25 @@ const AccountSection = () => {
               <div className="col-xl-3 col-lg-4">
                 <div className="account-sidebar search-sidebar">
                   <TabList className="nav side-tab flex-column nav-pills me-3">
-                    {
-                      accountTabs.map((accountTab, accountTabIndex) => {
-                        return (
-                          <Tab className={"nav-link"} key={accountTabIndex}>
-                            <span className="icon">{accountTab.icon}</span>
-                            {accountTab.text}
-                          </Tab>
-                        );
-                      })
-                    }
-                    <button type='button' className="nav-link" onClick={()=>{notify(); handleRedirectLogin();}}> 
-                      <span className="icon"> <i className="fas fa-sign-out-alt"></i></span>  
+                    {accountTabs.map((accountTab, accountTabIndex) => {
+                      return (
+                        <Tab className={"nav-link"} key={accountTabIndex}>
+                          <span className="icon">{accountTab.icon}</span>
+                          {accountTab.text}
+                        </Tab>
+                      );
+                    })}
+                    <button
+                      type="button"
+                      className="nav-link"
+                      onClick={() => {
+                        notify();
+                        handleRedirectLogin();
+                      }}
+                    >
+                      <span className="icon">
+                        {" "}
+                        <i className="fas fa-sign-out-alt"></i>
                       </span>
                       Logout
                     </button>
@@ -60,31 +67,31 @@ const AccountSection = () => {
 
               <div className="col-xl-9 col-lg-8">
                 <TabPanel>
-                  <AccountHomeTab/>
+                  <AccountHomeTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountProfileTab/>
+                  <AccountProfileTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountAddressTab/>
+                  <AccountAddressTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountDetailsTab/>
+                  <AccountDetailsTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountMyPropertyTab/>
+                  <AccountMyPropertyTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountFavoritePropertyTab/>
+                  <AccountFavoritePropertyTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountAddPropertyTab/>
+                  <AccountAddPropertyTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountPaymentTab/>
+                  <AccountPaymentTab />
                 </TabPanel>
                 <TabPanel>
-                  <AccountChangePasswordTab/>
+                  <AccountChangePasswordTab />
                 </TabPanel>
               </div>
             </div>

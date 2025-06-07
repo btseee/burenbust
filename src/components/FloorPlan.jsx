@@ -12,10 +12,10 @@ const FloorPlan = () => {
       <section className="floor-plan padding-y-60">
         <div className="container container-two">
           <SectionHeading
-            headingClass=""  
+            headingClass=""
             subtitle="Floor plan"
-            subtitleClass="" 
-            title="Unlocking the door to your a the new home" 
+            subtitleClass=""
+            title="Unlocking the door to your a the new home"
             renderDesc={false}
             desc=""
             renderButton={false}
@@ -26,7 +26,7 @@ const FloorPlan = () => {
           <div className="row gy-4 align-items-center">
             <div className="col-lg-6">
               <div className="floor-plan__thumb">
-                <img src={FloorImage} alt="Image"/>
+                <img src={FloorImage} alt="Image" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -34,48 +34,64 @@ const FloorPlan = () => {
                 <div className="d-block">
                   <Tabs>
                     <div className="d-flex justify-content-between flex-wrap">
-                      <h6 className="text fw-normal mb-0 floor-plan__title">Select Floor</h6>
-                      <TabList className={"common-tab style-two nav nav-pills mb-0"}>
-                        {
-                          floorTabLists.map((floorTabList, floorTabListIndex) => {
+                      <h6 className="text fw-normal mb-0 floor-plan__title">
+                        Select Floor
+                      </h6>
+                      <TabList
+                        className={"common-tab style-two nav nav-pills mb-0"}
+                      >
+                        {floorTabLists.map(
+                          (floorTabList, floorTabListIndex) => {
                             return (
-                              <Tab className={"nav-link"} key={floorTabListIndex}>
-                                <span className="text">{floorTabList.text}</span>
+                              <Tab
+                                className={"nav-link"}
+                                key={floorTabListIndex}
+                              >
+                                <span className="text">
+                                  {floorTabList.text}
+                                </span>
                               </Tab>
                             );
-                          })
-                        }
+                          }
+                        )}
                       </TabList>
                     </div>
 
-                    {
-                      floorTabPanels.map((floorTabPanel, FloorTabIndex) => {
-                        return (
-                          <TabPanel key={FloorTabIndex}>
-                            <ul className="floor-plan-list">
-                              {
-                                floorTabPanel.floorPlanLists && floorTabPanel.floorPlanLists.map((floorPlanList, floorPlanListIndex) => {
-
-                                  const isLastItem = floorPlanListIndex === floorTabPanel.floorPlanLists.length - 1;
+                    {floorTabPanels.map((floorTabPanel, FloorTabIndex) => {
+                      return (
+                        <TabPanel key={FloorTabIndex}>
+                          <ul className="floor-plan-list">
+                            {floorTabPanel.floorPlanLists &&
+                              floorTabPanel.floorPlanLists.map(
+                                (floorPlanList, floorPlanListIndex) => {
+                                  const isLastItem =
+                                    floorPlanListIndex ===
+                                    floorTabPanel.floorPlanLists.length - 1;
 
                                   return (
-                                    <li 
-                                      className={`floor-plan-list__item flx-between ${isLastItem ? "last-item" : "" }`} 
-                                      key={floorPlanListIndex}>
-                                      <h6 className="text fw-normal mb-0">{floorPlanList.text}</h6>
-                                      <span className="number font-16">{floorPlanList.number}</span>
+                                    <li
+                                      className={`floor-plan-list__item flx-between ${isLastItem ? "last-item" : ""}`}
+                                      key={floorPlanListIndex}
+                                    >
+                                      <h6 className="text fw-normal mb-0">
+                                        {floorPlanList.text}
+                                      </h6>
+                                      <span className="number font-16">
+                                        {floorPlanList.number}
+                                      </span>
                                     </li>
                                   );
-                                })
-                              }
-                            </ul>                                               
-                          </TabPanel>
-                        );
-                      })
-                    }
-                  </Tabs>   
+                                }
+                              )}
+                          </ul>
+                        </TabPanel>
+                      );
+                    })}
+                  </Tabs>
                 </div>
-                <p className="floor-plan__desc font-18 fw-light">*Real estate is a lucrative industry that involves the buying selling and renting of properties. It encompasses</p>
+                <p className="floor-plan__desc font-18 fw-light">
+                  *Real estate is a lucrative industry that involves the buying
+                  selling and renting of properties. It encompasses
                 </p>
               </div>
             </div>

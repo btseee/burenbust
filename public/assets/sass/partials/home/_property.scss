@@ -8,9 +8,9 @@
 
 /* List & Grid button */
 .list-grid {
-  display: none !important; 
-  @media (min-width: 360px) { 
-    display: flex !important; 
+  display: none !important;
+  @media (min-width: 360px) {
+    display: flex !important;
     &__button {
       width: 40px;
       height: 40px;
@@ -20,7 +20,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: .2s linear;
+      transition: 0.2s linear;
       &.active {
         border-color: hsl(var(--main)) !important;
         background: hsl(var(--main)) !important;
@@ -47,7 +47,6 @@
   }
 }
 
-
 /* property Item Start */
 .property-item {
   background-color: hsl(var(--white) / 0.025);
@@ -55,7 +54,8 @@
   overflow: hidden;
   position: relative;
   transition: 0.2s linear;
-  box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
+  box-shadow:
+    0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
     0px 4px 13px -2px rgba(19, 16, 34, 0.06);
 
   @media screen and (min-width: 425px) and (max-width: 575px) {
@@ -194,7 +194,8 @@
         overflow: hidden;
       }
       &__content {
-        box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
+        box-shadow:
+          0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
           0px 4px 13px -2px rgba(19, 16, 34, 0.06);
         border-radius: 5px 0px 5px 5px;
         margin-top: -88px;
@@ -232,32 +233,32 @@
   }
 
   &.style-shaped {
-      .property-item {
-        &__title {
-          order: -2;
-        }
-        &__price {
-          order: -1;
-          position: relative;
-        }
-        &__content {
-          display: flex;
-          flex-direction: column;
-        }
-        &__bottom{
-          order: -2;
-          border-top: 0;
-          padding-top: 0;
-          margin-top: 0;
-        }
+    .property-item {
+      &__title {
+        order: -2;
       }
+      &__price {
+        order: -1;
+        position: relative;
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+      &__bottom {
+        order: -2;
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
   }
 }
 /* property Item End */
 
-
 /* Property List Grid Wrapper */
-.list-grid-item-wrapper > div:has(.property-item.d-none), .property-item-wrapper > div:has(.property-item.d-none) {
+.list-grid-item-wrapper > div:has(.property-item.d-none),
+.property-item-wrapper > div:has(.property-item.d-none) {
   display: none !important;
 }
 
@@ -287,12 +288,12 @@
       border-radius: 5px 0 0 5px !important;
       display: flex !important;
       max-height: unset !important;
-      max-width: 374px !important; 
+      max-width: 374px !important;
       @include msm-screen {
-        max-width: 160px !important;  
+        max-width: 160px !important;
       }
       @include xsm-screen {
-        max-width: 120px !important;  
+        max-width: 120px !important;
       }
     }
   }
@@ -333,7 +334,10 @@
 }
 
 .item-text-black {
-  h6, a, span, p {
+  h6,
+  a,
+  span,
+  p {
     color: hsl(var(--heading-color));
   }
   .property-item__bottom {

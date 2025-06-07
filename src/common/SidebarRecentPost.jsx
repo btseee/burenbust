@@ -24,8 +24,8 @@ const SidebarRecentPost = () => {
                 <span className="icon text-gradient">
                   <i className="fas fa-folder-open"></i>
                 </span>
+                Category
               </span>
-              Category
               <h6 className="latest-blog__title">
                 <Link to={blogURL} state={{ thumb, title, admin, desc }}>
                   {title}

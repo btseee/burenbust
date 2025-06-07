@@ -1,6 +1,5 @@
-
 /* ======================== Functions Css End ======================= */
-// Convert px to REM 
+// Convert px to REM
 @function convertToRem($px) {
   $val: calc($px / 16);
   @return $val;
@@ -32,4 +31,3 @@
   );
 }
 /* ======================== Functions Css End ======================= */
-

@@ -16,10 +16,11 @@ const FooterTwo = () => {
             <div className="col-xl-4 col-lg-6">
               <div className="footer-item">
                 <FooterLogoDesc />
+
                 <h6 className="footer-item__title mt-4 mt-lg-5">
                   Lets Work Together
                 </h6>
-                Lets Work Together
+
                 <FooterInfo />
               </div>
             </div>

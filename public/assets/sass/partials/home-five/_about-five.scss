@@ -1,6 +1,6 @@
 /* ======================= About five Css Start ========================= */
 .about-five {
-  &__thumbs { 
+  &__thumbs {
     position: relative;
   }
   &__thumb {
@@ -34,7 +34,7 @@
   &__icon {
     width: 52px;
     height: 52px;
-    background-color: hsl(var(--white)/.2);
+    background-color: hsl(var(--white) / 0.2);
     border-radius: 50%;
     display: flex;
     justify-content: center;
