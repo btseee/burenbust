@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'; 
 import { BrowserRouter, Routes, Route, useLocation, useNavigationType } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
-import "react-image-lightbox/style.css";
+import "react-18-image-lightbox/style.css";
 import './App.css';
 
 import HomeOne from './pages/HomeOne';
