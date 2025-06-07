@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'; 
-import { BrowserRouter, Routes, Route, useLocation, useNavigationType } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation, useNavigationType } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import "react-18-image-lightbox/style.css";
 import './App.css';
@@ -63,7 +63,7 @@ function App() {
   
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Wrapper>
           <Routes>
             <Route path="/" element={<HomeOne />} />
@@ -95,7 +95,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Wrapper>
-      </BrowserRouter>
+      </HashRouter>
 
       <ScrollToTop/>
     </>
