@@ -4,18 +4,18 @@ import React from "react";
 export const offCanvasInfos = [
   {
     icon: <i className="fas fa-map-marker-alt"></i>,
-    text: "Burmsille Street, MN 55337, United States",
+    text: "Эрдэнэт хот, Монгол улс",
     link: "",
   },
   {
     icon: <i className="fas fa-phone"></i>,
-    text: ["+(1) 123 456 7890", "+(1) 098 765 4321"],
-    link: ["tel:", "tel:"],
+    text: ["+976 99114471"],
+    link: ["tel:"],
   },
   {
     icon: <i className="fas fa-envelope"></i>,
-    text: ["info@driller.com", "info.example@driller.com"],
-    link: ["mailto:", "mailto:"],
+    text: ["steelcc.llc@gmail.com"],
+    link: ["mailto:"],
   },
 ];
 
@@ -62,17 +62,17 @@ export const starRatings = [
 export const topHeaderInfos = [
   {
     icon: <i className="fas fa-phone"></i>,
-    text: "(629) 555-0129",
+    text: "+976 99114471",
     link: "tel:",
   },
   {
     icon: <i className="fas fa-envelope"></i>,
-    text: "info@example.com",
+    text: "steelcc.llc@gmail.com",
     link: "mailto:",
   },
   {
     icon: <i className="fas fa-map-marker-alt"></i>,
-    text: "6391 Elgin St. Celina, 10299",
+    text: "Эрдэнэт хот, Монгол улс",
     link: "",
   },
 ];
@@ -80,87 +80,15 @@ export const topHeaderInfos = [
 // Header Nav Menu
 export const navMenus = [
   {
-    text: "Home",
-    path: "#",
-    submenus: [
-      {
-        text: "Home One",
-        path: "/",
-      },
-      {
-        text: "Home Two",
-        path: "/home-two",
-      },
-      {
-        text: "Home Three",
-        path: "/home-three",
-      },
-      {
-        text: "Home Four",
-        path: "/home-four",
-      },
-      {
-        text: "Home Five",
-        path: "/home-five",
-      },
-    ],
+    text: "Нүүр",
+    path: "/",
   },
   {
-    text: "Pages",
-    path: "#",
-    submenus: [
-      {
-        text: "Property",
-        path: "/property",
-      },
-      {
-        text: "Property Sidebar",
-        path: "/property-sidebar",
-      },
-      {
-        text: "Add New Listing",
-        path: "/add-new-listing",
-      },
-      {
-        text: "Map Location",
-        path: "/map-location",
-      },
-      {
-        text: "About Us",
-        path: "/about-us",
-      },
-      {
-        text: "Faq",
-        path: "/faq",
-      },
-      {
-        text: "Cart",
-        path: "/cart",
-      },
-      {
-        text: "Checkout",
-        path: "/checkout",
-      },
-      {
-        text: "Login",
-        path: "/login",
-      },
-      {
-        text: "Account",
-        path: "/account",
-      },
-    ],
-  },
-  {
-    text: "Project",
+    text: "Төслүүд",
     path: "/project",
   },
   {
-    text: "Blog",
-    path: "/blog",
-  },
-  {
-    text: "Contact",
+    text: "Холбогдох",
     path: "/contact",
   },
 ];
@@ -169,13 +97,13 @@ export const navMenus = [
 export const footerInfos = [
   {
     icon: <i className="fas fa-map-marker-alt"></i>,
-    text: "Address",
-    address: "66 Broklyant, New York India",
+    text: "Хаяг",
+    address: "Эрдэнэт хот, Монгол улс",
   },
   {
     icon: <i className="fas fa-phone"></i>,
-    text: "Phone Number",
-    address: "012 345 678 9101",
+    text: "Утас",
+    address: "+976 99114471",
   },
 ];
 

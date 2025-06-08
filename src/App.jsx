@@ -71,13 +71,7 @@ function App() {
       <HashRouter>
         <Wrapper>
           <Routes>
-            <Route path="/" element={<HomeOne />} />
-            <Route path="/home-two" element={<HomeTwo />} />
-            <Route path="/home-three" element={<HomeThree />} />
-            <Route path="/home-four" element={<HomeFour />} />
-            <Route path="/home-five" element={<HomeFive />} />
-            <Route path="/home-six" element={<HomeSix />} />
-            <Route path="/home-seven" element={<HomeSeven />} />
+            <Route path="/" element={<HomeFive />} />
             <Route path="/property" element={<Property />} />
             <Route path="/property-sidebar" element={<PropertySidebar />} />
             <Route path="/property/:title" element={<PropertyDetails />} />

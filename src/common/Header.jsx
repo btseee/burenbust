@@ -63,7 +63,7 @@ const Header = (props) => {
                   <span className="icon text-gradient font-20">
                     <i className="fas fa-phone"></i>
                   </span>
-                  <span className="text">(629) 555-0129</span>
+                  <span className="text">+976 99114471</span>
                 </Link>
               )}
 
