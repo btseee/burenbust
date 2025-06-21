@@ -10,13 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-18-image-lightbox/style.css";
 import "./App.css";
 
-import HomeOne from "./pages/HomeOne";
-import HomeTwo from "./pages/HomeTwo";
-import HomeThree from "./pages/HomeThree";
-import HomeFour from "./pages/HomeFour";
 import HomeFive from "./pages/HomeFive";
-import HomeSix from "./pages/HomeSix";
-import HomeSeven from "./pages/HomeSeven";
 import ScrollToTop from "./common/ScrollToTop";
 import Property from "./pages/Property";
 import PropertySidebar from "./pages/PropertySidebar";

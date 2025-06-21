@@ -1,5 +1,3 @@
-import React from "react";
-
 import Header from "./../common/Header";
 import MobileMenu from "../common/MobileMenu";
 import OffCanvas from "../common/OffCanvas";
@@ -19,7 +17,7 @@ import FooterFive from "../common/FooterFive";
 const HomeFive = () => {
   return (
     <>
-      <PageTitle title="CityScape - Home Five" />
+      <PageTitle title="Burenbust Villa" />
 
       <OffCanvas />
       <MobileMenu />

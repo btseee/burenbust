@@ -11,7 +11,7 @@ const TopHeaderFive = () => {
                 <i className="fas fa-map-marker-alt"></i>
               </span>
               <span className="header-info__text text-white fw-light">
-                6391 Elgin St. Celina, 10299
+                Эрдэнэт хот, Монгол улс
               </span>
             </div>
             <div className="header-info__item text-white flx-align">
@@ -22,7 +22,7 @@ const TopHeaderFive = () => {
                 href="mailto:"
                 className="header-info__text text-white fw-light"
               >
-                info@example.com
+                steelcc.llc@gmail.com
               </a>
             </div>
           </div>

@@ -1,8 +1,8 @@
 {
-  "name": "react-3-real-estate",
+  "name": "burenbust",
   "homepage": "https://btseee.github.io/burenbust",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
