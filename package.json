@@ -1,5 +1,12 @@
 {
   "name": "burenbust",
+  "description": "A React-based web application for Burenbust, featuring a modern design and various functionalities including email integration, image lightbox, and more.",
+  "author": {
+    "name": "Battseren Badral",
+    "email": "bbattseren88@gmail.com",
+    "url": "https://btseee.github.io"
+  },
+  "license": "MIT",
   "homepage": "https://btseee.github.io/burenbust",
   "private": true,
   "version": "1.0.0",

@@ -9,18 +9,17 @@ const BannerFive = () => {
             <div className="banner-inner position-relative">
               <div className="banner-content">
                 <span className="banner-content__subtitle text-uppercase font-14">
-                  FinTech Fusion
+                  Бүрэн Бүст Вилла
                 </span>
                 <h1 className="banner-content__title">
-                  Beyond Walls We Build Dreams
+                  Хананы цаана гэр бүлийн тав тухтай орон зай
                 </h1>
                 <p className="banner-content__desc font-18">
-                  Unlock the Power of Real Estate Making Your Real Estate Dreams
-                  a Reality Real Estate here Unlock the Power of Real Estate
+                  Таны гэр бүлийн тав тухтай орон зайг бүтээхэд бид тусална.
                 </p>
                 <div className="banner-content__button">
                   <Link to="/about-us" className="btn btn-main fw-normal">
-                    Learn More
+                    Дэлгэрэнгүй
                     <span className="icon-right">
                       {" "}
                       <i className="fas fa-arrow-right"></i>{" "}
@@ -32,7 +31,7 @@ const BannerFive = () => {
           </div>
           <div className="col-lg-6 order-lg-0 order-1">
             <div className="banner-five__thumb">
-              <img src="assets/images/thumbs/banner-five-img.png" alt="" />
+              <img src="assets/images/home/banner-five-img.png" alt="" />
             </div>
           </div>
         </div>
